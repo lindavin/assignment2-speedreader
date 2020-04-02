@@ -29,14 +29,14 @@ public class WordGenerator {
 	} // hasNext()
 	
 	public String next() {
-		String next;
+		String next = null;
 		if(hasNext()) {
 			wordCount++;
 			next = scr.next();
 			if(sentenceEnd(next))
 				sentenceCount++;
 		}
-		return next();
+		return next;
 	} // next()
 	
 	public static boolean sentenceEnd(String word) {

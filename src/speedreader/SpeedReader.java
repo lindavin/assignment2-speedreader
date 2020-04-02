@@ -46,8 +46,9 @@ public class SpeedReader {
 		g.setFont(f);
 
 		while (wg.hasNext()) {
-			g.drawString("Hello World!", 100, 100);
+			g.drawString(wg.next(), 100, 100);
 			Thread.sleep((long) (1.0/wpm * 60000));
+			panel.clear();
 		} // while
 
 	} // main(String[])
